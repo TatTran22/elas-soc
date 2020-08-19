@@ -1,0 +1,11 @@
+@import '~normalize.css';
+@import '~@blueprintjs/core/lib/css/blueprint.css';
+@import '~@blueprintjs/icons/lib/css/blueprint-icons.css';
+@import '~@blueprintjs/core/lib/scss/variables';
+.bp3-control .bp3-control-indicator {
+  height: 1.2rem;
+  display: flex;
+  .bp3-control-indicator {
+    width: 32px;
+  }
+}

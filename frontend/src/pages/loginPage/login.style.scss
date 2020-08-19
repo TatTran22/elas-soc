@@ -1,0 +1,69 @@
+@import '~normalize.css';
+@import '~@blueprintjs/core/lib/css/blueprint.css';
+@import '~@blueprintjs/icons/lib/css/blueprint-icons.css';
+@import '~@blueprintjs/core/lib/scss/variables';
+.body {
+  margin: 0px;
+  padding: 0px;
+}
+.loginPage {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: #8a9ba8;
+  .container {
+    // height: 100%;
+    // margin-bottom: 0px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    background-color: #394b59;
+    .login-form {
+      height: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .bp3-form-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .bp3-label {
+          color: #ebf1f5;
+          font-weight: 600;
+          font-size: x-large;
+          letter-spacing: 0.1rem;
+        }
+        .bp3-form-content {
+          width: 400px;
+          margin: 1rem 5rem;
+          .bp3-input-group:nth-of-type(2) {
+            margin: 1rem 0;
+          }
+          .bp3-button[type='submit'] {
+            width: 100%;
+          }
+          .form-helper {
+            color: #738694;
+            margin-top: 0.5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    width: 960px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+}
